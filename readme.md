@@ -5,10 +5,7 @@
 
 #### build
 
-run : `cc -std=c99 -Wall $1.c -o $2`
-
-- replace $1 with your main file name
-- replace $2 with output file name
+run : `cc -std=c99 -Wall main.c -o main`
 
 # Version 0.2
 
@@ -18,10 +15,6 @@ run : `cc -std=c99 -Wall $1.c -o $2`
 
 #### build
 
-run : `cc -std=c99 -Wall $1.c -ledit -o $2`
+run : `cc -std=c99 -Wall $main.c -ledit -o main`
 
 - make sure you installed the editline lib. with `sudo apt-get install libedit-dev`
-
-
-- replace $1 with your main file name
-- replace $2 with output file name
